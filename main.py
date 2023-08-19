@@ -1,15 +1,13 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
-def main(name):
-    PATH = "C:\\Program Files (x86)\\chromedriver.exe"
-    driver = webdriver.Chrome(PATH)
-    driver.get(f'https://www.op.gg/summoners/na/{name}/ingame')
+def main(name, region):
+
+    path = "C:\\Program Files (x86)\\chromedriver.exe"
+    driver = webdriver.Chrome(path)
+    driver.get(f'https://www.op.gg/summoners/{region}/{name}/ingame')
     driver.implicitly_wait(5)
 
     blue_side_info = []
@@ -57,4 +55,6 @@ def main(name):
         print("ERROR: the user is not currently in a game!")
         driver.close()
 
-main("tyrant003")
+
+# Run this with your summoner name and region when in loading screen
+main("TL Honda CoreJJ", "NA")
