@@ -57,4 +57,4 @@ def main(name, region):
 
 
 # Run this with your summoner name and region when in loading screen
-main("TL Honda CoreJJ", "NA")
+main("tfw two smart", "NA")
