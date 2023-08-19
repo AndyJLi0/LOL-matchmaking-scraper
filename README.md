@@ -1,15 +1,8 @@
 # LOL-matchmaking-scraper
 
-<img src=".idea/example.PNG" alt="Logo" width="200" >
+<img src=".idea/example.png" alt="example">
 
-a python web-scraping script that takes data from OP.GG
-
-<a href="#getting-started">Getting Started</a> •
-
-<!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
-
-## Getting Started
-
+>A python web-scraping script that takes data from OP.GG. 
 
 ### Install dependencies
 ```sh
@@ -20,9 +13,12 @@ pip/conda install selenium
 
 ```sh
 git clone <https://github.com/AndyJLi0/LOL-matchmaking-scraper.git>
-cd <LOL-matchmaking-scraper>
 ```
 
+### Change name
+```sh
+main(
+```
 ### Run 
 
 ```sh
